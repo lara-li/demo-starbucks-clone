@@ -1,0 +1,142 @@
+:root {
+  --color-primary: #006241;
+  --color-secondary: #d50032;
+  --color-extra: #d4e9e2;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  margin-right: 2rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navbar a:hover {
+  color: var(--color-primary);
+}
+.map-link {
+  margin-right: 3rem;
+  display: flex;
+}
+.map-link:hover {
+  color: var(--color-primary);
+}
+.map-link span {
+  margin-left: 1rem;
+  align-self: center;
+  font-size: 0.94rem;
+}
+.navbar-container {
+  display: grid;
+  grid-template-columns: 5% 45% 45%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  height: 100%;
+}
+.image-link {
+  display: block;
+  height: 3.5rem;
+}
+.navbar {
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(40, 40, 40, 0.4);
+}
+.navbar-brand {
+  margin-left: 2rem;
+}
+.navbar-nav-left {
+  justify-content: flex-start;
+  margin-left: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.navbar-nav-right {
+  justify-content: flex-end;
+}
+.map-icon {
+  height: 2rem;
+}
+.btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 50rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.btn-dark-outline {
+  background-color: #eee;
+  border: 2px solid rgba(5, 5, 5, 0.8);
+}
+.btn-dark-outline:hover {
+  background-color: #ddd;
+}
+.btn-dark {
+  background-color: #111;
+  color: #eee;
+}
+.btn-dark:hover {
+  background-color: #333;
+}
+.first-card{
+  padding-top: 1rem;
+}
+.img-container{
+  height:80vh;
+  width: 50vw;
+border: 10px solid var(--color-primary);  
+}
+.img-fluid{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  height:80vh;
+}
+.card-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8rem;
+  text-align: center;
+  color:#ddd;
+  background-color: var(--color-primary);
+  width:50vw;
+  height: 100%;
+}
+.card-title{
+  margin-bottom:2rem;
+  width:25rem;
+}
+.card-text{
+  margin-bottom: 2rem;
+  width:35rem;
+}
+.card-text-box>button{
+  font-size: 1.1rem;
+}
